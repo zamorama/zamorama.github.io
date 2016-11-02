@@ -59,6 +59,7 @@ button{
   display: inline-block;
   font-size: 20px;
   font-family: 'Fira Mono', monospace;
+  cursor: pointer;
 }
 
 button:active {
@@ -93,6 +94,6 @@ label {
   display: inline-block;
   font-size: 20px;
   font-family: 'Fira Mono', monospace;
-    display: inline-block;
-    cursor: pointer;
-  }
+  display: inline-block;
+  cursor: pointer;
+}
