@@ -49,9 +49,9 @@ footer{
   color: #FFF;
 }
 button{
-  background-color: #00ffd8;
+  background-color: #f24470;
   border: none;
-  color: #21242d;
+  color: #FFF;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -69,3 +69,30 @@ button:active {
 body{
   background-color: #21242d;
 }
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #00ffd8;
+}
+label {
+  background-color: #00ffd8;
+  border: none;
+  color: #21242d;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 20px;
+  font-family: 'Fira Mono', monospace;
+    display: inline-block;
+    cursor: pointer;
+  }
