@@ -1,7 +1,46 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+<html lang="es_ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Generador de imágenes</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500,700" rel="stylesheet">
+
+  </head>
+  <body>
+    <h1>Generador de imágenes</h1>
+    <p>Construir imágen:</p>
+    <p><input type="radio" name="reunion" value="gris" id="tesorosBuscar" /> Gris
+    <input type="radio" name="reunion" value="amarillo" id="praticarMejor" /> Amarillo
+    <input type="radio" name="reunion" value="rojo" id="copiarJeus"/> Rojo<br></p>
+    <p># Asignación: <select id="numeroAsignacion" >
+              <option value="" id="cero" selected="selected"></option>
+              <option value="2" id="dos">2</option>
+              <option value="3" id="tres">3</option>
+              <option value="4" id="cuatro">4</option>
+              <option value="5" id="cinco">5</option>
+              <option value="6" id="seis">6</option>
+              <option value="7" id="siete">7</option>
+              <option value="8" id="ocho">8</option>
+              <option value="9" id="nueve">9</option>
+              <option value="10" id="diez">10</option>
+              <option value="11" id="once">11</option>
+              <option value="12" id="doce">12</option>
+          </select><br></p>
+    <p>Escribir Textos:<br>
+    <input type="text" id="txt1" /><br>
+    <input type="text" id="txt2" /><br>
+    <input type="text" id="txt3" /><br>
+    <input type="text" id="txt4" /><br></p>
+
+    <p>Subir Imágen:<br>
+    <input type="file" id="imageLoader" name="imageLoader"/></p>
+    <p><button type="button" id="borrarTextos" onClick="window.location.reload()">Borrar</button></p>
+
+    <!--<h1>Visualización</h1><br>-->
+    <p><canvas width="1280" height="720" id="imagenFinal"></canvas><br></p>
+    <script src="script.js"></script>
+    <footer>Contactar <a href="mailto:sebastianzamora2002@gmail.com">aquí</a></footer>
+  </body>
 </html>
