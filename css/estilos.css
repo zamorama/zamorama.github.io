@@ -114,6 +114,7 @@ footer {
   input.searchBtn,
   input.searchBox,
   input.extensionBox {
+    box-shadow: none;
     height: 70px;
     width: 85%;
     display: block;
