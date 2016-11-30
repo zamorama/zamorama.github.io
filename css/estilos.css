@@ -114,6 +114,7 @@ footer {
   section {
     width: 85%;
     margin: auto;
+    text-align: center;
   }
   input.searchBtn,
   input.searchBox,
