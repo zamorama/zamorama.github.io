@@ -109,7 +109,7 @@ footer {
 @media only screen and (max-width: 480px) {
   h1 {
   	font-size: 8em;
-    margin: 0.67em 0;
+    margin: 0.67em 0 0.335em 0;
   }
   input.searchBtn,
   input.searchBox,
