@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+  <head>
+    <meta charset="utf-8">
+    <title>Generador de imágenes</title>
+    <link rel="shortcut icon" href="img/favicon.jpg" />
+    <link rel="icon" sizes="192x192" href="img/favicon.jpg">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/latest/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/estilo.css">
+
+  </head>
+  <body>
+    <section id="leftColumn">
+      <h1>Generador de imágenes</h1><br>
+      <p><a href="tutorial.html"><b style="color:#fed900;">VER TUTORIAL</b></a></p>
+      <p>Construir imágen:</p>
+      <p><input type="radio" name="reunion" value="gris" id="tesorosBuscar" /> Gris
+      <input type="radio" name="reunion" value="amarillo" id="praticarMejor" /> Amarillo
+      <input type="radio" name="reunion" value="rojo" id="copiarJeus"/> Rojo<br></p>
+      <p># Asignación: <select id="numeroAsignacion" >
+                <option value="" id="cero" selected="selected"></option>
+                <option value="2" id="dos">2</option>
+                <option value="3" id="tres">3</option>
+                <option value="4" id="cuatro">4</option>
+                <option value="5" id="cinco">5</option>
+                <option value="6" id="seis">6</option>
+                <option value="7" id="siete">7</option>
+                <option value="8" id="ocho">8</option>
+                <option value="9" id="nueve">9</option>
+                <option value="10" id="diez">10</option>
+                <option value="11" id="once">11</option>
+                <option value="12" id="doce">12</option>
+            </select><br></p>
+      <p>Escribir Textos:<br>
+      <input type="text" id="txt1" /><br>
+      <input type="text" id="txt2" /><br>
+      <input type="text" id="txt3" /><br>
+      <input type="text" id="txt4" /><br></p>
+
+      <label for="imageLoader">↑ Cargar Imágen</label><br>
+      <p><a href="zip/Imagenes_Nov_Dic_2016.zip" download><b style="color:#f69679;">DESCARGAR IMAGENES <br>PARA NOVIEMBRE Y DICIEMBRE 2016</b></a></p>
+      <input type="file" id="imageLoader" name="imageLoader" class="inputfile"/>
+      <p><button type="button" id="borrarTextos" onClick="window.location.reload()">Borrar Imágen</button></p>
+    </section>
+
+
+    <section id="rightColumn">
+      <p><canvas width="1280" height="720" id="imagenFinal"></canvas><br></p>
+    </section>
+
+
+    <script src="script.js"></script>
+    <footer>Contactar <a href="mailto:sebastianzamora2002@gmail.com">aquí</a></footer>
+  </body>
+</html>
