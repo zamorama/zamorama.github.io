@@ -111,12 +111,16 @@ footer {
   	font-size: 8em;
     margin: 0.335em 0;
   }
+  form {
+    width: 85%;
+    margin: auto;
+  }
   input.searchBtn,
   input.searchBox,
   input.extensionBox {
     box-shadow: none;
     height: 70px;
-    width: 85%;
+    width: 100%;
     display: block;
     margin: 10px auto;
   }
