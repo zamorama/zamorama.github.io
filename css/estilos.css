@@ -111,6 +111,31 @@ footer {
 	width:100%;
 }
 
+@media only screen and (max-width: 768px) {
+  h1 {
+  	font-size: 15em;
+    margin: 0.335em 0;
+  }
+  section {
+    margin: auto;
+    text-align: center;
+    width: 85%;
+  }
+
+  .searchBtn {
+    box-shadow: none;
+  }
+
+  input.searchBtn,
+  input.searchBox,
+  input.extensionBox {
+
+    height: 70px;
+    padding: 0;
+    width: 70%;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   h1 {
   	font-size: 8em;
