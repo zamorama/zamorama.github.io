@@ -138,8 +138,8 @@ footer {
 
 @media only screen and (max-width: 480px) {
   h1 {
-  	font-size: 8em;
-    margin: 0.335em 0;
+	  font-size: 8em;
+    margin: 0.335em 0 0.1em 0;
   }
   section {
     margin: auto;
