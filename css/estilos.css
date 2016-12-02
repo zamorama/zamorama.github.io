@@ -57,7 +57,7 @@ h2 {
 .searchBox,
 .searchBtn {
   background: white;
-  border: 1px solid black;
+  border: 3px solid black;
   border-radius: 4px;
   display: block;
   font-family: 'Fira Mono', monospace;
@@ -72,9 +72,8 @@ h2 {
 
 .searchBox:focus,
 .extensionBox:focus {
-    border-color: #0af5b6;
-    box-shadow: 0 0 10px #0af5b6;
-    outline: none !important;
+    border: 1px solid #0af5b6;
+    /*box-shadow: 0 0 5px gray;*/
 }
 
 #searchBtn {
@@ -83,6 +82,8 @@ h2 {
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
+
+
 }
 
 a {
@@ -94,7 +95,6 @@ a {
 
 a:hover {
   color: rgb(0, 255, 220);
-  text-decoration: underline;
 }
 
 footer {
@@ -114,8 +114,13 @@ footer {
 @media only screen and (max-width: 768px) {
   h1 {
   	font-size: 15em;
-    margin: 0.335em 0;
+    margin: 0.15em 0 0 0;
   }
+
+  h2 {
+    margin: -50px auto 40px auto;
+  }
+
   section {
     margin: auto;
     text-align: center;
@@ -141,11 +146,17 @@ footer {
 	  font-size: 8em;
     margin: 0.335em 0 0.1em 0;
   }
+
+  h2 {
+    margin: -35px auto 40px auto;
+  }
+
   section {
     margin: auto;
     text-align: center;
     width: 85%;
   }
+
   input.searchBtn,
   input.searchBox,
   input.extensionBox {
