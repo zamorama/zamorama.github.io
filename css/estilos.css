@@ -107,7 +107,7 @@ footer {
 	height:40px;
   /*left: 0;
 	position:fixed;*/
-  margin-top: 5em;
+  margin-top: 4em;
 	width:100%;
 }
 
@@ -144,11 +144,11 @@ footer {
 @media only screen and (max-width: 480px) {
   h1 {
 	  font-size: 8em;
-    margin: 0.2em 0 0.1em 0;
+    margin: 0.1em 0 0.1em 0;
   }
 
   h2 {
-    margin: -35px auto 40px auto;
+    margin: -35px auto 30px auto;
   }
 
   section {
