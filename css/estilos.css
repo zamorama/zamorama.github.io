@@ -1,26 +1,32 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
-@-moz-document url-prefix(){ h1 {letter-spacing: normal; } }
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:400,700');
+@import url('https://fonts.googleapis.com/css?family=Baloo');
 
 ::selection {
-  background: rgb(0, 255, 217);
+  background: rgb(0, 255, 220);
   color: white;
   text-shadow: none;
 }
 ::-moz-selection {
-  background: rgb(0, 255, 217);
+  background: rgb(0, 255, 220);
   color: white;
   text-shadow: none;
 }
 
+html,
 body {
-  background-color: rgb(61, 90, 252);
+    height: 100%;
+}
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background: white;
 	color: rgb(0, 0, 0);
-  font-family: 'Montserrat', sans-serif;
   font-size: 16px;
 }
 
 main {
+  height: 100%;
   margin: auto;
   max-width: 960px;
   overflow: hidden;
@@ -28,86 +34,80 @@ main {
 }
 
 h1 {
-  color: white;
-	font-size: 10em;
-  letter-spacing: -0.06em;
+  color: rgb(0, 255, 220);
+  font-family: 'Baloo', cursive;
+	font-size: 8em;
+  font-weight: 300;
+  letter-spacing: -4px;
   margin: 0.67em 0 0 0;
 	text-align: center;
-  text-shadow: 0px 1px 20px rgb(60, 41, 214);
   width: 100%;
 }
 
-input.extensionBox {
-    border: none;
-    border-radius: 5px;
-    display: block;
-    font-size: 1em;
-    font-weight: lighter;
-    height: 50px;
-    line-height: 1.5;
-    margin: 10px auto;
-    outline:none;
-    text-align: center;
-    width: 40%;
-}
-input.searchBox {
-  border: none;
-  border-radius: 5px;
-  display: block;
+h2 {
+  color: black;
+  font-family: 'Fira Mono', monospace;
   font-size: 1em;
-  font-weight: lighter;
+  font-weight: 100;
+  letter-spacing: 0;
+  margin: -20px auto 40px auto;
+}
+
+.extensionBox,
+.searchBox,
+.searchBtn {
+  background: white;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: block;
+  font-family: 'Fira Mono', monospace;
+  font-weight: 400;
   height: 50px;
-  line-height: 1.5;
   margin: 10px auto;
-  outline:none;
+  outline: none;
+  padding: 0;
   text-align: center;
   width: 40%;
+}
 
+.searchBox:focus,
+.extensionBox:focus {
+    border-color: #0af5b6;
+    box-shadow: 0 0 10px #0af5b6;
+    outline: none !important;
+}
+
+#searchBtn {
+  background: black;
+  box-sizing: content-box;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 a {
-	color: rgb(0, 255, 217);
+	color: black;
   cursor: pointer;
   font-weight: 700;
 	text-decoration:none;
 }
 
-.searchBtn {
-  -webkit-font-smoothing: antialiased;
-	background: rgb(0, 255, 217);
-  border: none;
-  border-radius: 5px;
-	color: rgb(61, 90, 252);
-  cursor: pointer;
-	display: block;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-	margin: 10px auto;
-  outline:none;
-	padding: 1em 3em;
-	text-decoration:none;
-  text-transform: uppercase;
-  transition: box-shadow .5s ease-out;
-  width: 40%;
-}
-
-.searchBtn:hover {
-  box-shadow: 0px 1px 20px rgb(60, 41, 214);
-  transition: box-shadow .5s ease-in;
+a:hover {
+  color: rgb(0, 255, 220);
+  text-decoration: underline;
 }
 
 footer {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 	bottom:0;
-  color: white;
-  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-family: 'Fira Mono', monospace;
   font-size: 0.7em;
   font-weight: lighter;
 	height:40px;
-	left:0;
-	position:absolute;
+  left: 0;
+	position:fixed;;
 	width:100%;
 }
 
