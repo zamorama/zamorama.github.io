@@ -72,8 +72,7 @@ h2 {
 
 .searchBox:focus,
 .extensionBox:focus {
-    border: 1px solid #0af5b6;
-    /*box-shadow: 0 0 5px gray;*/
+    border: 3px solid #0af5b6;
 }
 
 #searchBtn {
