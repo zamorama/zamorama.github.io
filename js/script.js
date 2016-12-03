@@ -1,7 +1,6 @@
 /*
 This script is for exclusive use of findr.xyz
 */
-
 function fonttf(){
   var searchBtn = document.getElementById("searchBtn");
   var searchBox = document.getElementById("searchBox");
