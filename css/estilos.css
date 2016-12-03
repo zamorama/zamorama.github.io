@@ -12,11 +12,6 @@
   text-shadow: none;
 }
 
-/*html,
-body {
-    height: 100%;
-}*/
-
 body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -26,7 +21,6 @@ body {
 }
 
 main {
-  /*height: 100%;*/
   margin: auto;
   max-width: 960px;
   overflow: hidden;
@@ -72,45 +66,40 @@ h2 {
 
 .searchBox:focus,
 .extensionBox:focus {
-    border: 3px solid #0af5b6;
+    border: 3px solid rgb(0, 255, 220);
 }
 
 #searchBtn {
   background: black;
   box-sizing: content-box;
   color: #fff;
+  cursor: pointer;
   font-weight: 700;
   text-transform: uppercase;
-
-
 }
 
 a {
 	color: black;
   cursor: pointer;
   font-weight: 700;
+  padding: 0 0.3em;
 	text-decoration:none;
 }
 
 a:hover {
-  color: rgb(0, 255, 220);
-}
-
-p {
-  display: none;
+  background: rgb(0, 255, 220);
+  border-radius: 3px;
+  color: #000;
 }
 
 footer {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-	/*bottom:0;*/
   color: black;
   font-family: 'Fira Mono', monospace;
   font-size: 0.7em;
   font-weight: lighter;
 	height:40px;
-  /*left: 0;
-	position:fixed;*/
   margin-top: 2em;
 	width:100%;
 }
@@ -141,7 +130,7 @@ footer {
 
     height: 70px;
     padding: 0;
-    width: 70%;
+    width: 100%;
   }
 }
 
