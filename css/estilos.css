@@ -132,6 +132,12 @@ footer {
     padding: 0;
     width: 100%;
   }
+
+  a {
+    background: rgb(0, 255, 220);
+    border-radius: 3px;
+    color: #000;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -157,5 +163,11 @@ footer {
     height: 70px;
     padding: 0;
     width: 100%;
+  }
+
+  a {
+    background: rgb(0, 255, 220);
+    border-radius: 3px;
+    color: #000;
   }
 }
