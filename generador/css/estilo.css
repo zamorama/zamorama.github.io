@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css?family=Ubuntu:500,700');
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Fira+Mono');
 
 html {
@@ -8,104 +7,175 @@ html {
   line-height: 1.5em;
   margin: 20px auto;
   text-align: center;
-
 }
 body {
-  background: rgb(39, 81, 199);
-}
-h1 {
-  color: white;
-  display: inline;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 700;
-}
-p {
-  color: #FFF;
-  font-family: 'Fira Mono', monospace;
-  font-size: 1em;
+  background: #fefbe7;
+  font-size: 16px;
+  margin-top: 90px;
 }
 
-section#leftColumn, section#rightColumn {
-  display: inline-block;
-  width: 50%;
+code {
+  background: #FCF3BD;
+  border-radius: 5px;
+  display: block;
+  margin: auto;
+  margin-bottom: 1em;
+  padding: 0.8em;
+  width: 670px;
 }
 
-canvas {
-  background-color: #2a2d35;
-  box-shadow: 0px 50px 50px 0px rgba(0,0,0,0.3);
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 70px;
-
+select {
+  margin-left: 1em;
+  margin-right: 1em;
 }
 
-canvas#imagenFinal {
-  width: 50%;
-  height: 50%;
+img#logoChrome {
+  vertical-align: middle;
+  width: 20px;
 }
 
-button {
-  margin-top: 15px;
+section#toolBar {
+  align-items: center;
+  background: #FCF3BD;
+  border-bottom: 6px solid #E2CD6E;
+  left: 0px;
+  margin: auto;
+  position: fixed;
+  text-align: center;
+  top: 0px;
+  width: 100%;
 }
+
+#interna {
+  margin: auto;
+  max-width: 960px;
+  position: relative;
+}
+
 #imagenFinal{
 -webkit-font-smoothing: antialiased;
+height: 720px;
 text-indent: -9999px;
 text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-height: 720px;
 width: 1280px;
 }
-a {
-    color: #00ffd8;
+
+img {
+  display: inline-block;
+  margin: auto;
+  width: 250px;
+}
+#linkDescarga {
+    background: #D24E49;
+    border-radius: 5px;
+    color: #FFF;
     font-family: 'Fira Mono', monospace;
     text-decoration: none;
-}
-footer{
-  color: #FFF;
-  font-family: 'Fira Mono', monospace;
-}
-button{
-  background-color: #f24470;
-  border: none;
-  color: #FFF;
-  cursor: pointer;
-  display: inline-block;
-  font-family: 'Fira Mono', monospace;
-  font-size: 20px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+    padding: 0.2em 0.6em;
 }
 
-button:active {
-  background-color: #2a2d35;
-  color:#fff;
-  transform: translateY(4px);
+#linkDescarga:hover {
+  text-decoration: underline;
+}
+footer{
+
+  font-family: 'Fira Mono', monospace;
 }
 
 .inputfile {
-	height: 0.1px;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
-	width: 0.1px;
-	z-index: -1;
+  display: inline-block;
+  display: none;
+  height: 0px;
+  opacity: 0;
+  overflow: hidden;
+  width: 0px;
+}
+input[type=radio] {
+  margin-left: 1em;
+}
+
+input[type=text] {
+  border: 3px solid black;
+  border-radius: 5px;
+  height: 25px;
+  outline: none;
+  width: 90px;
 }
 
 .inputfile:focus + label,
 .inputfile + label:hover {
     background-color: #00ffd8;
 }
+
 label {
-  background-color: #00ffd8;
-  border: none;
-  color: #21242d;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px black;
+  color: black;
   cursor: pointer;
   display: inline-block;
-  display: inline-block;
-  font-family: 'Fira Mono', monospace;
-  font-size: 20px;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 1em;
+  margin: auto;
+  margin-left: 10px;
+  outline: none;
+  padding: 0.01em;
+  width: 96px;
+}
+
+label:hover {
+  box-shadow: 2px 2px black;
+  transform: translate(1px, 1px);
+}
+
+label:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+.divsDivisorias {
+  margin-top: 10px;
+}
+.divInferior {
+  margin-bottom: 10px;
+}
+canvas {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 6px 6px #fcf3bd;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  margin: auto;
+  margin-bottom: 0.3em;
+}
+
+canvas#imagenFinal {
+  height: 54.688%;
+  width: 54.688%;
+}
+
+#borrarTextos {
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px black;
+  color: black;
+  cursor: pointer;
+  display: block;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1em;
+  height: 40px;
+  margin: auto;
+  margin-bottom: 1em;
+  outline: none;
+  width: 130px;
+}
+#borrarTextos:hover {
+  box-shadow: 2px 2px black;
+  transform: translate(1px, 1px);
+}
+#borrarTextos:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
