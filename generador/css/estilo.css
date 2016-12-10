@@ -179,3 +179,18 @@ canvas#imagenFinal {
   box-shadow: none;
   transform: translate(3px, 3px);
 }
+.siMostrar {
+  display: none;
+}
+@media only screen and (max-width: 959px) {
+  .noMostrar,
+  #borrarTextos {
+    display: none;
+  }
+  .siMostrar {
+    display: block;
+    width: 80%;
+    margin: auto;
+    line-height: normal;
+  }
+}
