@@ -1,0 +1,33 @@
+html, body {
+  background: black;
+  color: white;
+  font: 12px Menlo, "DejaVu Sans Mono", "Lucida Console", monospace;
+}
+
+h2 {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#principal {
+  margin: auto;
+  max-width: 800px;
+}
+
+p {
+  line-height: 18px;
+}
+
+a {
+  color: #FF2E88;
+}
+
+a:hover {
+  background: #FF2E88;
+  color: white;
+  text-decoration: none;
+}
+
+span {
+  color: #50E3C2;
+}
