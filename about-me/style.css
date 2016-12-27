@@ -2,6 +2,7 @@ html, body {
   background: black;
   color: white;
   font: 12px Menlo, "DejaVu Sans Mono", "Lucida Console", monospace;
+  height: 100%;
 }
 
 h2 {
@@ -12,6 +13,8 @@ h2 {
 #principal {
   margin: auto;
   max-width: 800px;
+
+  padding-top: 15%;
 }
 
 p {
