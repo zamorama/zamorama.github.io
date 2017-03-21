@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <section class="contenido">
+      <h1>Unidades de Insulina</h1>
+      <h2 id="insulinaP">0</h2>
+      <form>
+        <!-- Ratio -->
+        <label for="ratio">Ratio</label>
+        <input type="number" name="ratio" value="" id="ratio">
+
+        <!-- Raciones -->
+        <label for="raciones">Raciones</label>
+        <input type="number" name="raciones" value="" id="raciones">
+
+        <!-- Glucosa Actual -->
+        <label for="gluco_actual">Glucosa Actual</label>
+        <input type="number" name="gluco_actual" value="" id="gluco_actual">
+
+        <!-- Glucosa Deseada -->
+        <label for="gluco_deseada">Glucosa Deseada</label>
+        <input type="number" name="gluco_deseada" value="" id="gluco_deseada">
+
+        <!-- Factor de Sensibilidad -->
+        <label for="factor_sensibilidad">Factor de Sensibilidad</label>
+        <input type="number" name="factor_sensibilidad" value="" id="factor_sensibilidad">
+
+        <!-- Calcular-->
+        <input type="button" onclick="resultadito()" value="Calcular" />
+      </form>
+    </section>
+
+  </body>
+</html>
