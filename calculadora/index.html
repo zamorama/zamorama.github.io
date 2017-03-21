@@ -13,24 +13,34 @@
       <h2 id="insulinaP">0</h2>
       <form>
         <!-- Ratio -->
-        <label for="ratio">Ratio</label>
-        <input type="number" name="ratio" value="" id="ratio">
+        <div class="cajas">
+          <label for="ratio">Ratio</label>
+          <input type="number" name="ratio" id="ratio">
+        </div>
 
         <!-- Raciones -->
-        <label for="raciones">Raciones</label>
-        <input type="number" name="raciones" value="" id="raciones">
+        <div class="cajas">
+          <label for="raciones">Raciones</label>
+          <input type="number" name="raciones" id="raciones">
+        </div>
 
         <!-- Glucosa Actual -->
-        <label for="gluco_actual">Glucosa Actual</label>
-        <input type="number" name="gluco_actual" value="" id="gluco_actual">
+        <div class="cajas">
+          <label for="gluco_actual">Glucosa Actual</label>
+          <input type="number" name="gluco_actual" id="gluco_actual">
+        </div>
 
         <!-- Glucosa Deseada -->
-        <label for="gluco_deseada">Glucosa Deseada</label>
-        <input type="number" name="gluco_deseada" value="" id="gluco_deseada">
+        <div class="cajas">
+          <label for="gluco_deseada">Glucosa Deseada</label>
+          <input type="number" name="gluco_deseada" id="gluco_deseada">
+        </div>
 
         <!-- Factor de Sensibilidad -->
-        <label for="factor_sensibilidad">Factor de Sensibilidad</label>
-        <input type="number" name="factor_sensibilidad" value="" id="factor_sensibilidad">
+        <div class="cajas" id="sensibilidad">
+          <label for="factor_sensibilidad">Factor de Sensibilidad</label>
+          <input type="number" name="factor_sensibilidad" id="factor_sensibilidad">
+        </div>
 
         <!-- Calcular-->
         <input type="button" onclick="resultadito()" value="Calcular" />

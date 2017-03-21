@@ -5,11 +5,38 @@ body {
 }
 
 label, input {
-  display: block;
+  font-family: 'Poppins', sans-serif;
   width: 100%;
+  font-weight: 700;
+
+}
+
+label {
+  color: #8E969E;
+  font-size: 24px;
+}
+
+input {
+  border: 3px solid #8E969E;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 30px;
+  height: 64px;
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+.cajas {
+  display: inline-block;
+  width: 45%;
 }
 
 .contenido {
-  width: 350px;
   margin: 0 auto;
+  width: 350px;
+}
+
+#sensibilidad {
+  display: block;
+  width: 100%;
 }
