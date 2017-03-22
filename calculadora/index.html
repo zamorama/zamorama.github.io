@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Calculadora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/estilos.css">
     <script src="script.js"></script>
   </head>
   <body>
     <section class="contenido">
-      <h1>Unidades de Insulina</h1>
+      <h1 id="insulinaU">Unidades de Insulina</h1>
       <h2 id="insulinaP">0</h2>
       <form>
         <!-- Ratio -->
@@ -43,7 +44,7 @@
         </div>
 
         <!-- Calcular-->
-        <input type="button" onclick="resultadito()" value="Calcular" />
+        <input type="button" onclick="resultadito()" value="Calcular" id="boton"/>
       </form>
     </section>
 
