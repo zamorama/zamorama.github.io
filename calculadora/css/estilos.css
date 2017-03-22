@@ -13,7 +13,8 @@ label, input {
 
 label {
   color: #8E969E;
-  font-size: 24px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 input {
@@ -27,8 +28,8 @@ input {
 }
 
 .cajas {
-  display: inline-block;
-  width: 49.32%;
+  display: block;
+  width: 100%;
 }
 
 .contenido {
