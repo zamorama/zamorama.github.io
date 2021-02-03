@@ -8,5 +8,5 @@ function resultadito() {
   var resultadoDos = (gactual - gdeseada) / fsensibilidad;
   var resultadoFinal = resultadoUno + resultadoDos;
   var insu = document.getElementById("insulina");
-  document.getElementById('insulinaP').innerHTML= Math.round(resultadoFinal);
+  //document.getElementById('insulinaP').innerHTML= Math.round(resultadoFinal);
 }
