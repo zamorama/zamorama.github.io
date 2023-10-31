@@ -16,7 +16,7 @@
 
         $.getJSON(url, function(data) {
             var temperatura = Math.round(data.main.temp - 273.15); // Temperatura en Celsius
-            var hora = new Date().toLocaleTimeString('es-ES');
+            var hora = new Date().toLocaleTimeString('es-ES', {hour: 'numeric', minute: 'numeric'});
             $("#temperatura").text(temperatura + "°C");
             $("#hora").text(hora);
         });
