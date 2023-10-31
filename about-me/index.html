@@ -1,14 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <section id="principal">
-      <h2>About me</h2>
-      <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipisicing elit</a>, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <span>Excepteur sint occaecat cupidatat non proident</span>, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    </section>
-  </body>
+<head>
+  <title>Hora y temperatura en Valencia</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function(){
+        obtenerTiempo();
+        setInterval(obtenerTiempo, 60000); // Actualizar cada minuto
+    });
+
+    function obtenerTiempo() {
+        var apiKey = 'cceccedfb92f2ed104ed893993d63777'; // API key de OpenWeatherMap
+        var ciudad = 'Valencia';
+        var url = 'https://api.openweathermap.org/data/2.5/weather?q=' + ciudad + ',es&appid=' + apiKey;
+
+        $.getJSON(url, function(data) {
+            var temperatura = Math.round(data.main.temp - 273.15); // Temperatura en Celsius
+            var hora = new Date().toLocaleTimeString('es-ES');
+            $("#temperatura").text(temperatura + "°C");
+            $("#hora").text(hora);
+        });
+    }
+  </script>
+</head>
+<body>
+  <h1>Hora y temperatura en Valencia</h1>
+  <p>Hora actual: <span id="hora"></span></p>
+  <p>Temperatura actual: <span id="temperatura"></span></p>
+</body>
 </html>
